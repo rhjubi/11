@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NoteLife</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+
+<div class="row">
+	<div class="col-lg-2">
+		<div class="left-side">
+			<div class="logo">
+			<h1>LOGO</h1>
+			<h3>LifePlus</h3>
+			</div>
+			<hr>
+			<div class="profile mt-3">
+					<nav>
+				         <div class="drop-btn">
+				         	<div class="d-flex align-items-center">
+				         		<img src="profile.svg">
+				         			<div class="px-3">
+				         				<h5 style="margin: 0;padding: 0;transform: translateY(20px);">user-name</h5>
+				         				<p style="margin: 0;padding: 0;font-size: 10px;text-align: left;color: #C0C0C0;">Joined: Jan 12 2021</p>
+				         			</div>
+				         	</div><span class="fas fa-caret-down"></span>
+				         </div>
+				         <div class="wrapper">
+				            <ul class="menu-bar">
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="far fa-user-circle"></span>
+				                     </div>
+				                     My Profile
+				                  </a>
+				               </li>
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="fas fa-user-edit"></span>
+				                     </div>
+				                     Edit Profile
+				                  </a>
+				               </li>
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="fas fa-user-cog"></span>
+				                     </div>
+				                     Account Settings
+				                  </a>
+				               </li>
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="fas fa-user-shield"></span>
+				                     </div>
+				                     Privacy settings
+				                  </a>
+				               </li>
+				               <hr class="mt-2">
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="fas fa-sign-out-alt"></span>
+				                     </div>
+				                     Log out 
+				                  </a>
+				               </li>
+				            </ul>
+				         </div>
+				      </nav>			
+			</div>
+
+			<div class="search mt-3">
+                      <input class="s-input" type="text" name="search" placeholder="Search here"><i class="fas fa-search s-icon"></i>
+            </div>
+            
+            <div class="mt-4">
+					<nav>
+				         <div class="drop-btn add-item">
+				         	<div><strong>+</strong> Add items </div><span class="fas fa-caret-down"></span>
+				         </div>
+				         <div class="wrapper">
+				            <ul class="menu-bar">
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="far fa-sticky-note"></span>
+				                     </div>
+				                     Blank Notes
+				                  </a>
+				               </li>
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="fas fa-clipboard-list"></span>
+				                     </div>
+				                     To-Do
+				                  </a>
+				               </li>
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="fas fa-user-cog"></span>
+				                     </div>
+				                     Essay Notes
+				                  </a>
+				               </li>
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="fas fa-circle-notch"></span>
+				                     </div>
+				                     Daily Reflection
+				                  </a>
+				               </li>
+				            </ul>
+				         </div>
+				      </nav>			
+			</div>
+
+			<a href="#" class="notes"><i class="far fa-clipboard notes-icon mt-4"></i>Your Notes</a>
+
+			<div class="notebook mt-2">
+					<nav>
+				         <div class="notebook-btn">NoteBooks<span class="fas fa-caret-down"></span>
+				         </div>
+				         <div class="notebook-wrapper">
+				            <ul class="menu-bar">
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="far fa-folder-open"></span>
+				                     </div>
+				                     Project Plan
+				                  </a>
+				               </li>
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="far fa-folder-open"></span>
+				                     </div>
+				                     Routine Notes
+				                  </a>
+				               </li>
+				               <li>
+				                  <a href="#">
+				                     <div class="icon">
+				                        <span class="far fa-folder-open"></span>
+				                     </div>
+				                     Planning
+				                  </a>
+				               </li>
+				            </ul>
+				         </div>
+				      </nav>			
+			</div>
+
+			<a href="#" class="notes"><i class="far fa-clock notes-icon mt-4"></i></i>Reminder</a><br>
+			<a href="#" class="notes"><i class="fas fa-tag notes-icon mt-4"></i>Tags</a><br>
+			<a href="#" class="notes"><i class="far fa-trash-alt notes-icon mt-4"></i></i>Bin</a>
+
+<div class="other-page">
+	<nav>
+         <div class="other-page-drop-btn">
+           # Other Page <span class="fas fa-caret-down"></span>
+         </div>
+         <div class="other-page-wrapper">
+            <ul class="other-page-menu-bar">
+               
+               <li class="other-page-setting-item1">
+                  <a href="#"><div><span class="fas fa-user me-2"></span>User Details</div>
+                     <i class="fas fa-angle-right"></i></a>
+               </li>
+
+               <li class="other-page-setting-item2">
+                  <a href="#"><div><span class="fab fa-elementor me-2"></span>UI Elements</div>
+                     <i class="fas fa-angle-right"></i></a>
+               </li>
+
+               <li class="other-page-setting-item3">
+                  <a href="#"><div><span class="fas fa-shield-alt me-2"></span>Authentication</div>
+                     <i class="fas fa-angle-right"></i></a>
+               </li>
+
+               <li class="other-page-setting-item4">
+                  <a href="#"><div><span class="fab fa-paypal me-2"></span>Pricing</div>
+                     <i class="fas fa-angle-right"></i></a>
+               </li>
+
+               <li class="other-page-setting-item5">
+                  <a href="#"><div><span class="fas fa-exclamation-triangle me-2"></span>Error</div>
+                     <i class="fas fa-angle-right"></i></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="far fa-folder-open me-2"></span>Blank Page</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-braille me-2"></span>Maintaince</div></a>
+               </li>
+               
+               
+            </ul>
+            <!-- Settings & privacy Menu-items -->
+            <ul class="other-page-setting-drop1">
+               <li class="arrow other-page-back-setting-btn"><span class="fas fa-arrow-left"></span>User Details</li>
+               <li>
+                  <a href="#"><div><span class="fas fa-user me-2"></span>User Profile</div></a>
+               </li>
+               
+               <li>
+                  <a href="#"><div><span class="fas fa-user-plus me-2"></span>User Add</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>User List</div></a>
+               </li>
+            </ul>
+
+            <ul class="other-page-setting-drop2">
+               <li class="arrow other-page-back-setting-btn2"><span class="fas fa-arrow-left"></span>UI Elements</li>
+               <li>
+                  <a href="#"><div><span class="fas fa-user me-2"></span>Avater</div></a>
+               </li>
+               
+               <li>
+                  <a href="#"><div><span class="fas fa-user-plus me-2"></span>Alert</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Badges</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Breadcrumb</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Buttons</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Buttons Group</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Box Shadow</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Color</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Card</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Carousal</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Grid</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Helper Classes</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Images</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Media</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Modal</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Notifications</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Pagination</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Popovers</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Processbar</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Typogaphy</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Tabs</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Tooltip</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Video</div></a>
+               </li>
+
+            </ul>
+
+            <ul class="other-page-setting-drop3">
+               <li class="arrow other-page-back-setting-btn3"><span class="fas fa-arrow-left"></span>Authentication</li>
+               <li>
+                  <a href="#"><div><span class="fas fa-user me-2"></span>Log in</div></a>
+               </li>
+               
+               <li>
+                  <a href="#"><div><span class="fas fa-user-plus me-2"></span>Register</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Recover Password</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Confirm Mail</div></a>
+               </li>
+
+               <li>
+                  <a href="#"><div><span class="fas fa-list-alt me-2"></span>Lock Screen</div></a>
+               </li>
+            </ul>
+
+            <ul class="other-page-setting-drop4">
+               <li class="arrow other-page-back-setting-btn4"><span class="fas fa-arrow-left"></span>Pricing</li>
+               <li>
+                  <a href="#"><div><span class="fas fa-user me-2"></span>Pricing 1</div></a>
+               </li>
+               
+               <li>
+                  <a href="#"><div><span class="fas fa-user-plus me-2"></span>Pricing 2</div></a>
+               </li>
+
+            </ul>
+
+            <ul class="other-page-setting-drop5">
+               <li class="arrow other-page-back-setting-btn5"><span class="fas fa-arrow-left"></span>Error</li>
+               <li>
+                  <a href="#"><div><span class="fas fa-user me-2"></span>Error 404</div></a>
+               </li>
+               
+               <li>
+                  <a href="#"><div><span class="fas fa-user-plus me-2"></span>Error 500</div></a>
+               </li>
+            </ul>
+ 
+         </div>
+      </nav>
+</div>
+
+<div>
+	<img src="upgrade.svg" class="image-fluid vert-move" alt="upgrade image">
+	<p>Set Buisness Account To Explore Premiun Features</p>
+	<button type="button">Upgrade</button>
+</div>
+
+
+        </div>
+	</div>
+	<div class="col-lg-10">
+		<div class="row">
+			<div class="col-11">
+				<div class="write-div">
+					<a href="#"><i class="fas fa-pencil-alt me-2"></i>Write a note</a>
+				</div>
+			</div>
+			<div class="col-1">
+				<div class="row g-0">
+					<div class="notification-div">
+
+						<div class="dropdown">
+						  <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						    <i class="far fa-envelope"></i>
+							<span class="position-absolute top-0 start-100 translate-middle badge ">2</span>
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 330px;transition: .3s;">
+						    <li><a class="dropdown-item" href="#">
+						    	<div style="display: flex;">
+						    		<img src="profile.svg" class="nft-img me-2">
+						    		<div style="display: flex;justify-content: space-between;">
+						    			<div>
+						    				<h5 style="margin: 0;padding: 0;">Emma Watson</h5>
+						    				<p style="font-size: 15px;margin: 5px 0 0 0;padding: 0;">lorem ipsum dolor sit amet</p>
+						    			</div>
+						    			<p style="Color: black;">12:47pm</p>
+						    		</div>
+						    	</div>
+						    	<hr class="mt-3">
+						    </a></li>
+
+						    <li><a class="dropdown-item" href="#">
+						    	<div style="display: flex;">
+						    		<img src="female.svg" class="nft-img me-2">
+						    		<div style="display: flex;justify-content: space-between;">
+						    			<div>
+						    				<h5 style="margin: 0;padding: 0;">Ashlynn Franci</h5>
+						    				<p style="font-size: 15px;margin: 5px 0 0 0;padding: 0;">lorem ipsum dolor sit amet</p>
+						    			</div>
+						    			<p style="Color: black;">12:01pm</p>
+						    		</div>
+						    	</div>
+						    	<hr class="mt-3">
+						    </a></li>
+
+						    <li><a class="dropdown-item" href="#">
+						    	<div style="display: flex;">
+						    		<img src="female2.svg" class="nft-img me-2">
+						    		<div style="display: flex;justify-content: space-between;">
+						    			<div>
+						    				<h5 style="margin: 0;padding: 0;">Kianna Cardar</h5>
+						    				<p style="font-size: 15px;margin: 5px 0 0 0;padding: 0;">lorem ipsum dolor sit amet</p>
+						    			</div>
+						    			<p style="Color: black;">12:47am</p>
+						    		</div>
+						    	</div>
+						    </a></li>
+						    <button type="button" style="width: 100%;position: relative;left: 0;top: 15px;background: black;color: white;">See All</button>
+						  </ul>
+						</div>
+		
+						<div class="dropdown">
+						  <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						    <i class="far fa-bell"></i>
+							<span class="position-absolute top-0 start-100 translate-middle badge ">2</span>
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 330px;transition: .3s;">
+						    <li><a class="dropdown-item" href="#">
+						    	<div style="display: flex;">
+						    		<img src="profile.svg" class="nft-img me-2">
+						    		<div style="display: flex;justify-content: space-between;">
+						    			<div>
+						    				<h5 style="margin: 0;padding: 0;">Emma Watson</h5>
+						    				<p style="font-size: 15px;margin: 5px 0 0 0;padding: 0;">lorem ipsum dolor sit amet</p>
+						    			</div>
+						    			<p style="Color: black;">12:47pm</p>
+						    		</div>
+						    	</div>
+						    	<hr class="mt-3">
+						    </a></li>
+
+						    <li><a class="dropdown-item" href="#">
+						    	<div style="display: flex;">
+						    		<img src="female.svg" class="nft-img me-2">
+						    		<div style="display: flex;justify-content: space-between;">
+						    			<div>
+						    				<h5 style="margin: 0;padding: 0;">Ashlynn Franci</h5>
+						    				<p style="font-size: 15px;margin: 5px 0 0 0;padding: 0;">lorem ipsum dolor sit amet</p>
+						    			</div>
+						    			<p style="Color: black;">12:01pm</p>
+						    		</div>
+						    	</div>
+						    	<hr class="mt-3">
+						    </a></li>
+
+						    <li><a class="dropdown-item" href="#">
+						    	<div style="display: flex;">
+						    		<img src="female2.svg" class="nft-img me-2">
+						    		<div style="display: flex;justify-content: space-between;">
+						    			<div>
+						    				<h5 style="margin: 0;padding: 0;">Kianna Cardar</h5>
+						    				<p style="font-size: 15px;margin: 5px 0 0 0;padding: 0;">lorem ipsum dolor sit amet</p>
+						    			</div>
+						    			<p style="Color: black;">12:47am</p>
+						    		</div>
+						    	</div>
+						    </a></li>
+						    <button type="button" style="width: 100%;position: relative;left: 0;top: 15px;background: black;color: white;">See All</button>
+						  </ul>
+						</div>			
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="notes-div">
+			<div><h3>Your Notes</h3></div>
+			<div style="display: flex;justify-content: space-between;position: relative;left: 0;">
+				<div class="notes-category-button">
+					<ul>
+						<li class="list-name active"><a onclick="total()">All</a></li>
+						<li class="list-name"><a onclick="share()">Shared Notes</a></li>
+						<li class="list-name"><a onclick="onlyme()">Pin Notes</a></li>
+						<li class="list-name"><a onclick="favourite()">Favourite Notes</a></li>
+					
+					</ul>
+				</div>
+				<div class="filter-button">
+					<button class="filter-btn"><i class="fas fa-filter" style="font-size: 15px;"></i></button>
+					<button class="filter-btn"><i class="fas fa-th" style="font-size: 15px;"></i></button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4" id="share1">
+					<div class="card mt-3 c-body" id="share">
+						<div style="display: flex;justify-content: space-between;">
+							<div class="ic-b"><i class="far fa-calendar"></i></div>
+							<div>
+								
+									  <button class="btn2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									    <p><strong>...</strong></p>
+									  </button>
+									  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+									    <li><a class="dropdown-item" href="#">View</a></li>
+									    <li><a class="dropdown-item" href="#">Edit</a></li>
+									    <li><a class="dropdown-item" href="#">Delete</a></li>
+									  </ul>
+								
+							</div>
+						</div>
+						<div>
+							<h5 style="margin-top: 15px;">Quick Summary</h5>
+							<p style="text-align: left;">Virtual Digital Marketing Course every week on Monday, Wednesday and Saturday.Virtual Digital Marketing Course every week on Monday</p>
+						</div>
+						<div style="display: flex;justify-content: space-between;transform: translateY(40px);">
+							<div><i class="fas fa-user-friends me-2"></i>03 share</div>
+							<div><i class="far fa-calendar-alt me-2"></i>12 June 2021</div>
+						
+						</div>
+
+					</div>
+					<hr style="height: 5px;width: 98%;background: green;transform: translateY(-5px);border-radius: 20px;margin-left: 5px;">
+				</div>
+
+				<!-- number 2 -->
+				<div class="col-lg-4" id="only-me1">
+					<div class="card mt-3 c-body" id="only-me">
+						<div style="display: flex;justify-content: space-between;">
+							<div class="ic-b"><i class="fas fa-birthday-cake"></i></div>
+							<div>
+								
+									  <button class="btn2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									    <p><strong>...</strong></p>
+									  </button>
+									  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+									    <li><a class="dropdown-item" href="#">View</a></li>
+									    <li><a class="dropdown-item" href="#">Edit</a></li>
+									    <li><a class="dropdown-item" href="#">Delete</a></li>
+									  </ul>
+								
+							</div>
+						</div>
+						<div>
+							<h5 style="margin-top: 15px;">Address & Email</h5>
+							<p style="text-align: left;">You can easily share via message, WhatsApp, emails etc. You can also save your notes and edit it later or can easily delete the note.</p>
+						</div>
+						<div style="display: flex;justify-content: space-between;transform: translateY(40px);">
+							<div><i class="fas fa-user-friends me-2"></i>Only me</div>
+							<div><i class="far fa-calendar-alt me-2"></i>12 June 2021</div>
+						
+						</div>
+
+					</div>
+					<hr style="height: 5px;width: 98%;background: #8A2BE2;transform: translateY(-5px);border-radius: 20px;margin-left: 5px;">
+				</div>
+
+				<!-- number 3 -->
+				<div class="col-lg-4" id="favourite1">
+					<div class="card mt-3 c-body" id="favourite">
+						<div style="display: flex;justify-content: space-between;">
+							<div class="ic-b"><i class="fas fa-th-list"></i></div>
+							<div>
+								
+									  <button class="btn2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									    <p><strong>...</strong></p>
+									  </button>
+									  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+									    <li><a class="dropdown-item" href="#">View</a></li>
+									    <li><a class="dropdown-item" href="#">Edit</a></li>
+									    <li><a class="dropdown-item" href="#">Delete</a></li>
+									  </ul>
+								
+							</div>
+						</div>
+						<div>
+							<h5 style="margin-top: 15px;">Essay Outline</h5>
+							<p style="text-align: left;">
+								<ul>
+									<li>Content should be of topic.</li>
+									<li>300 Words only.</li>
+									<li>Make presentation.</li>
+								</ul>
+							</p>
+						</div>
+						<div style="display: flex;justify-content: space-between;transform: translateY(40px);">
+							<div><i class="fas fa-user-friends me-2"></i>Favourite</div>
+							<div><i class="far fa-calendar-alt me-2"></i>12 June 2021</div>
+						
+						</div>
+
+					</div>
+					<hr style="height: 5px;width: 98%;background: orange;transform: translateY(-5px);border-radius: 20px;margin-left: 5px;">
+				</div>
+
+				<!-- number 4 -->
+
+				<div class="col-lg-4" id="favourite2">
+					<div class="card mt-3 c-body" id="favourite">
+						<div style="display: flex;justify-content: space-between;">
+							<div class="ic-b"><i class="fas fa-birthday-cake"></i></div>
+							<div>
+								
+									  <button class="btn2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									    <p><strong>...</strong></p>
+									  </button>
+									  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+									    <li><a class="dropdown-item" href="#">View</a></li>
+									    <li><a class="dropdown-item" href="#">Edit</a></li>
+									    <li><a class="dropdown-item" href="#">Delete</a></li>
+									  </ul>
+								
+							</div>
+						</div>
+						<div>
+							<h5 style="margin-top: 15px;">Benefits of NotePlus</h5>
+							<p style="text-align: left;">
+								<ul>
+									<li>Content should be of topic.</li>
+									<li>300 Words only.</li>
+									<li>Make presentation.</li>
+								</ul>
+							</p>
+						</div>
+						<div style="display: flex;justify-content: space-between;transform: translateY(40px);">
+							<div><i class="fas fa-user-friends me-2"></i>Favourite</div>
+							<div><i class="far fa-calendar-alt me-2"></i>12 June 2021</div>
+						
+						</div>
+
+					</div>
+					<hr style="height: 5px;width: 98%;background: orange;transform: translateY(-5px);border-radius: 20px;margin-left: 5px;">
+				</div>
+
+				<div class="col-lg-4" id="share2">
+					<div class="card mt-3 c-body" id="share">
+						<div style="display: flex;justify-content: space-between;">
+							<div class="ic-b"><i class="far fa-calendar"></i></div>
+							<div>
+								
+									  <button class="btn2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									    <p><strong>...</strong></p>
+									  </button>
+									  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+									    <li><a class="dropdown-item" href="#">View</a></li>
+									    <li><a class="dropdown-item" href="#">Edit</a></li>
+									    <li><a class="dropdown-item" href="#">Delete</a></li>
+									  </ul>
+								
+							</div>
+						</div>
+						<div>
+							<h5 style="margin-top: 15px;">Weekly Planner</h5>
+							<p style="text-align: left;">Virtual Digital Marketing Course every week on Monday, Wednesday and Saturday.Virtual Digital Marketing Course every week on Monday</p>
+						</div>
+						<div style="display: flex;justify-content: space-between;transform: translateY(40px);">
+							<div><i class="fas fa-user-friends me-2"></i>03 share</div>
+							<div><i class="far fa-calendar-alt me-2"></i>12 June 2021</div>
+						
+						</div>
+
+					</div>
+					<hr style="height: 5px;width: 98%;background: green;transform: translateY(-5px);border-radius: 20px;margin-left: 5px;">
+				</div>
+
+				<!-- number 2 -->
+				<div class="col-lg-4" id="only-me2">
+					<div class="card mt-3 c-body" id="only-me">
+						<div style="display: flex;justify-content: space-between;">
+							<div class="ic-b"><i class="fas fa-birthday-cake"></i></div>
+							<div>
+								
+									  <button class="btn2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									    <p><strong>...</strong></p>
+									  </button>
+									  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+									    <li><a class="dropdown-item" href="#">View</a></li>
+									    <li><a class="dropdown-item" href="#">Edit</a></li>
+									    <li><a class="dropdown-item" href="#">Delete</a></li>
+									  </ul>
+								
+							</div>
+						</div>
+						<div>
+							<h5 style="margin-top: 15px;">Birthday Celebration</h5>
+							<p style="text-align: left;">You can easily share via message, WhatsApp, emails etc. You can also save your notes and edit it later or can easily delete the note.</p>
+						</div>
+						<div style="display: flex;justify-content: space-between;transform: translateY(40px);">
+							<div><i class="fas fa-user-friends me-2"></i>Only me</div>
+							<div><i class="far fa-calendar-alt me-2"></i>12 June 2021</div>
+						
+						</div>
+
+					</div>
+					<hr style="height: 5px;width: 98%;background: #8A2BE2;transform: translateY(-5px);border-radius: 20px;margin-left: 5px;">
+				</div>
+
+				<!-- number 3 -->
+				
+			</div>
+		</div>
+		<div class="row">
+			<div style="padding: 20px;margin-top: 20px;background: white;display: flex;justify-content: space-between;align-items: center;border-radius: 10px;width: 99%;margin-left: 10px;">
+				<p>Privacy Policy Terms of Use</p>
+				<p>2021 NoteLife</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+  function total() {
+    document.getElementById('share1').style.display = "block";
+    document.getElementById('only-me1').style.display = "block";
+    document.getElementById('favourite1').style.display = "block";
+    document.getElementById('share2').style.display = "block";
+    document.getElementById('only-me2').style.display = "block";
+    document.getElementById('favourite2').style.display = "block";
+  }
+
+  function share() {
+    document.getElementById('share1').style.display = "block";
+    document.getElementById('only-me1').style.display = "none";
+    document.getElementById('favourite1').style.display = "none";
+    document.getElementById('share2').style.display = "block";
+    document.getElementById('only-me2').style.display = "none";
+    document.getElementById('favourite2').style.display = "none";
+  }
+
+    function onlyme() {
+    document.getElementById('share1').style.display = "none";
+    document.getElementById('only-me1').style.display = "block";
+    document.getElementById('favourite1').style.display = "none";
+    document.getElementById('share2').style.display = "none";
+    document.getElementById('only-me2').style.display = "block";
+    document.getElementById('favourite2').style.display = "none";
+  }
+
+    function favourite() {
+    document.getElementById('share1').style.display = "none";
+    document.getElementById('only-me1').style.display = "none";
+    document.getElementById('favourite1').style.display = "block";
+    document.getElementById('share2').style.display = "none";
+    document.getElementById('only-me2').style.display = "none";
+    document.getElementById('favourite2').style.display = "block";
+  }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+  $(document).on('click', 'ul li', function(){
+    $(this).addClass('active').siblings().removeClass('active')
+  })
+</script>
+<script>
+           $(".drop-btn").click(function() {
+    		$(this).siblings(".wrapper").toggle();
+			});
+           $(".notebook-btn").click(function() {
+    		$(this).siblings(".notebook-wrapper").toggle();
+			});
+
+</script>
+<script>
+		const drop_btn = document.querySelector(".other-page-drop-btn");
+		const menu_wrapper = document.querySelector(".other-page-wrapper");
+         const menu_bar = document.querySelector(".other-page-menu-bar");
+         const setting_drop1 = document.querySelector(".other-page-setting-drop1");
+         const setting_drop2 = document.querySelector(".other-page-setting-drop2");
+         const setting_drop3 = document.querySelector(".other-page-setting-drop3");
+         const setting_drop4 = document.querySelector(".other-page-setting-drop4");
+         const setting_drop5 = document.querySelector(".other-page-setting-drop5");
+         const setting_item1 = document.querySelector(".other-page-setting-item1");
+         const setting_item2 = document.querySelector(".other-page-setting-item2");
+         const setting_item3 = document.querySelector(".other-page-setting-item3");
+         const setting_item4 = document.querySelector(".other-page-setting-item4");
+         const setting_item5 = document.querySelector(".other-page-setting-item5");
+         const setting_btn = document.querySelector(".other-page-back-setting-btn");
+         const setting_btn2 = document.querySelector(".other-page-back-setting-btn2");
+         const setting_btn3 = document.querySelector(".other-page-back-setting-btn3");
+         const setting_btn4 = document.querySelector(".other-page-back-setting-btn4");
+         const setting_btn5 = document.querySelector(".other-page-back-setting-btn5");
+         
+           drop_btn.onclick = (()=>{
+             menu_wrapper.classList.toggle("show");
+           });
+           setting_item1.onclick = (()=>{
+             menu_bar.style.marginLeft = "-220px";
+             setTimeout(()=>{
+               setting_drop1.style.display = "block";
+             }, 100);
+           });
+           setting_item2.onclick = (()=>{
+             menu_bar.style.marginLeft = "-220px";
+             setTimeout(()=>{
+               setting_drop2.style.display = "block";
+             }, 100);
+           });
+           setting_item3.onclick = (()=>{
+             menu_bar.style.marginLeft = "-220px";
+             setTimeout(()=>{
+               setting_drop3.style.display = "block";
+             }, 100);
+           });
+           setting_item4.onclick = (()=>{
+             menu_bar.style.marginLeft = "-220px";
+             setTimeout(()=>{
+               setting_drop4.style.display = "block";
+             }, 100);
+           });
+           setting_item5.onclick = (()=>{
+             menu_bar.style.marginLeft = "-220px";
+             setTimeout(()=>{
+               setting_drop5.style.display = "block";
+             }, 100);
+           });
+           
+           setting_btn.onclick = (()=>{
+             menu_bar.style.marginLeft = "0px";
+             setting_drop1.style.display = "none";
+           });
+           setting_btn2.onclick = (()=>{
+             menu_bar.style.marginLeft = "0px";
+             setting_drop2.style.display = "none";
+           });
+           setting_btn3.onclick = (()=>{
+             menu_bar.style.marginLeft = "0px";
+             setting_drop3.style.display = "none";
+           });
+           setting_btn4.onclick = (()=>{
+             menu_bar.style.marginLeft = "0px";
+             setting_drop4.style.display = "none";
+           });
+           setting_btn5.onclick = (()=>{
+             menu_bar.style.marginLeft = "0px";
+             setting_drop5.style.display = "none";
+           });
+           
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
